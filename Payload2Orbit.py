@@ -131,7 +131,7 @@ def subdropmenu():
 def show(clickvar,ls,dvTotal,lat):
     # Function displays the calculated payload to orbit mass
     try:
-        inclination = int(inc.get())
+        inclination = float(inc.get())
     except ValueError:
         inclination = 0
     e.config(state="normal")
